@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Número a Mes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Número a Mes</h1>
+    <label for="numero-mes">Ingrese el número del mes que desea saber:</label>
+    <input type="text" id="numero-mes">
+    <button onclick="obtenerMes()">Obtener Mes</button>
+    <p id="resultado"></p>
+
+    <script>
+        function obtenerMes() {
+            var num_mes = parseInt(document.getElementById("numero-mes").value);
+            var resultado = document.getElementById("resultado");
+
+            if (num_mes === 1) {
+                resultado.textContent = "Enero";
+            } else if (num_mes === 2) {
+                resultado.textContent = "Febrero";
+            } else if (num_mes === 3) {
+                resultado.textContent = "Marzo";
+            } else if (num_mes === 4) {
+                resultado.textContent = "Abril";
+            } else if (num_mes === 5) {
+                resultado.textContent = "Mayo";
+            } else if (num_mes === 6) {
+                resultado.textContent = "Junio";
+            } else if (num_mes === 7) {
+                resultado.textContent = "Julio";
+            } else if (num_mes === 8) {
+                resultado.textContent = "Agosto";
+            } else if (num_mes === 9) {
+                resultado.textContent = "Septiembre";
+            } else if (num_mes === 10) {
+                resultado.textContent = "Octubre";
+            } else if (num_mes === 11) {
+                resultado.textContent = "Noviembre";
+            } else if (num_mes === 12) {
+                resultado.textContent = "Diciembre";
+            } else {
+                resultado.textContent = "Mes inexistente";
+            }
+        }
+    </script>
+</body>
+</html>
